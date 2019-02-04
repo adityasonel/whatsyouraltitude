@@ -58,4 +58,4 @@ buck-out/
 *.jsbundle
 
 # src
-src/screen/AppKey.js
+src/screens/AppKey.js
