@@ -21,7 +21,9 @@ import Header from "../components/Header";
 import NoPermission from "../components/NoPermission";
 
 import AppKey from "./AppKey";
+
 var apiKey = AppKey.googleApiKey; //add your google api key here
+
 var someQuotes = [
     "Hmm, nice try. You have to really work on your altitude.", // < 100
     "Nice try, you trying to get your altitude high!", //100-400

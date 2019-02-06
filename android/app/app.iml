@@ -176,5 +176,11 @@
     <orderEntry type="module" module-name="lottie-react-native" />
     <orderEntry type="module" module-name="react-native-google-places" />
     <orderEntry type="module" module-name="react-native-vector-icons" />
+    <orderEntry type="module" module-name="react-native-linear-gradient" />
+    <orderEntry type="module" module-name="react-native-geolocation-service" />
+    <orderEntry type="module" module-name="react-native-gesture-handler" />
+    <orderEntry type="module" module-name="lottie-react-native" />
+    <orderEntry type="module" module-name="react-native-google-places" />
+    <orderEntry type="module" module-name="react-native-vector-icons" />
   </component>
 </module>
