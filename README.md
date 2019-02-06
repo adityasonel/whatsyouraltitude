@@ -2,6 +2,8 @@
 
 WhatsYourAltitude a.k.a WYA. WYA is a RN Geolocation Services showcase. I created this application just to get the ALTITUDE of current location of user, that's why it's known as WhatsYourAltitude. But the problem is getting altitude of any location is not easy. You can get latitude - longitude of any location with the help Google Services. But to get altitude of any location you have to use Map API provided by Google.
 
+This project curreclty supported on Android only.
+
 ## Screenshots
 
 <img align="left" src="https://github.com/adityasonel/whatsyouraltitude/blob/master/sample/ss1.png" width="200" height="350" />
@@ -10,13 +12,13 @@ WhatsYourAltitude a.k.a WYA. WYA is a RN Geolocation Services showcase. I create
 
 ## What's inside
 
--   [x] Up-to-date code with Android-X and X-Code libraries
--   [x] React-Native Geolocation-Service
--   [x] React-Native Google-Places
--   [x] Lottie React-Native
--   [x] React-Navigation
--   [x] React-Native Linear Gradient
--   [x] React-Native Vector Icon
+-   [x] Up-to-date code with Android-X libraries
+-   [x] [React-Native Geolocation-Service](https://github.com/Agontuk/react-native-geolocation-service)
+-   [x] [React-Native Google-Places](https://github.com/tolu360/react-native-google-places)
+-   [x] [Lottie React-Native](https://github.com/react-native-community/lottie-react-native)
+-   [x] [React-Navigation](https://reactnavigation.org)
+-   [x] [React-Native Linear Gradient](https://github.com/react-native-community/react-native-linear-gradient)
+-   [x] [React-Native Vector Icon](https://github.com/oblador/react-native-vector-icons)
 
 ## Getting Started
 
@@ -40,7 +42,23 @@ npm install
 react-native link
 ```
 
-That's it! Cool, right?
+#### 3. Add google api key:
+
+Get your google api and add to `HomeScreen.js` at
+```bash
+# replace AppKey.googleApiKey with your api key
+var apiKey = AppKey.googleApiKey;
+```
+and also at `AndroidManifest.xml` at,
+
+```
+<application>
+  ...
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/ANDROID_GEO_API_KEY"/>
+</application>
+```
 
 ## Currently known issue
 
@@ -72,7 +90,7 @@ There you go, everything is perfect. Just run application again. But i am not re
 
 ## Contributing
 
-If you find any problems, please [open an issue](https://github.com/adityasonel/TheReactApp/issues/new) or submit a fix as a pull request.
+If you find any problems, please [open an issue](https://github.com/adityasonel/whatsyouraltitude/issues/new) or submit a fix as a pull request.
 
 ## License
 
